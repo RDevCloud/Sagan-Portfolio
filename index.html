@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Showcase | R. - WordPress & Shopify Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Prism.js for code highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Sagan Application - Technical Showcase</span>
+                <h1>Engineering <span>Smart Web Ecosystems</span></h1>
+                <p>I don't just build pages; I understand the entire architecture from the Linux server and data layer
+                    to the front-end user experience, ensuring high-converting, HIPAA-compliant, and technically
+                    flawless websites.</p>
+                <div class="hero-buttons">
+                    <a href="#nda-notice" class="btn btn-primary">Why a "Showcase"?</a>
+                    <a href="#showcase" class="btn btn-secondary">View the Code</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <div class="window-title">architecture.json</div>
+                    </div>
+                    <pre><code class="language-json">{
+  "developer": "R.",
+  "focus": ["WordPress", "Shopify", "Web Publishing"],
+  "skills": {
+    "cms": ["ACF", "Elementor Pro", "WPBakery", "Divi"],
+    "frontend": ["Liquid", "JSON", "JavaScript", "HTML/CSS"],
+    "seo_analytics": ["GTM", "Lighthouse", "Yoast", "GA4"],
+    "workflow": ["Figma", "Asana", "AI (Copilot/ChatGPT)"]
+  },
+  "status": "Ready for Sagan"
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="nda-notice" class="section">
+        <div class="container">
+            <div class="glass-card notice-card">
+                <h2><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg> The HIPAA / NDA Constraint</h2>
+                <p>Due to the strict <strong>HIPAA compliance and ironclad NDAs</strong> involved in my recent
+                    projects—specifically architecting automation and complex web flows in the healthcare sector—I am
+                    legally restricted from sharing live URLs or exposing the front-end of my production work.</p>
+                <p>However, I completely understand the need to evaluate my coding and CMS proficiency. This technical
+                    showcase outlines my workflow, sanitized code snippets (JSON, Liquid, JS), and structural approaches
+                    that reflect exactly how I develop.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="section dark-section">
+        <div class="container">
+            <h2 class="section-title">The Journey</h2>
+            <div class="story-grid">
+                <div class="story-block">
+                    <h3>01 / The Deep Tech Foundation</h3>
+                    <p>My early days as a Telematics Engineer involved configuring Cisco equipment, Linux environments,
+                        and Apache web servers. That foundation taught me how the internet actually works under the
+                        hood, not just how it looks on a screen.</p>
+                </div>
+                <div class="story-block">
+                    <h3>02 / The Content-to-Conversion Bridge</h3>
+                    <p>I specialize in translating raw Google Docs and Figma briefs into visually polished,
+                        conversion-optimized pages. I leverage builders like Elementor Pro and WPBakery alongside custom
+                        CSS/JS to break up heavy text, manage SVGs, and guide the user's eye naturally down the funnel.
+                    </p>
+                </div>
+                <div class="story-block">
+                    <h3>03 / Smart Publishing & AI</h3>
+                    <p>Working in fast-paced remote environments requires adaptability. I utilize AI tools like ChatGPT
+                        and GitHub Copilot to accelerate troubleshooting, while ensuring I deliver QA-tested, responsive
+                        layouts with flawless event tracking (GTM/GA4) on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="section">
+        <div class="container">
+            <h2 class="section-title">Sanitized Code Showcase</h2>
+
+            <div class="showcase-item">
+                <div class="showcase-content">
+                    <h3>Shopify & WordPress Data Handling</h3>
+                    <p>A demonstration of how I architect foolproof backends using Advanced Custom Fields (ACF) or
+                        Shopify Metaobjects so content teams can update pages without breaking the design.</p>
+                    <ul class="features-list">
+                        <li>ACF & Custom Template Architecture</li>
+                        <li>Shopify Liquid & JSON Section Schemas</li>
+                        <li>Extending Elementor/WPBakery with custom JS</li>
+                    </ul>
+                </div>
+                <div class="showcase-code">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <div class="window-title">liquid-dynamic-render.liquid</div>
+                        </div>
+                        <pre><code class="language-liquid">{% comment %}
+  Dynamic Injection based on ACF/Metafield Payload
+{% endcomment %}
+{% assign complex_data = product.metafields.custom.architecture_json.value %}
+
+<div class="sagan-custom-widget" id="dynamic-{{ product.id }}">
+  {% if complex_data.isActive %}
+    <h2 class="dynamic-heading">{{ complex_data.headline }}</h2>
+    <script type="application/json" id="payload-{{ product.id }}">
+      {{ complex_data | json }}
+    </script>
+  {% endif %}
+</div>
+
+<script>
+    // Vanilla JS Handler - Defer execution to prioritize LCP
+    document.addEventListener('DOMContentLoaded', () => {
+        const payloadEl = document.getElementById('payload-{{ product.id }}');
+        if (payloadEl) {
+            const data = JSON.parse(payloadEl.textContent);
+            initDynamicWidget(data.components);
+        }
+    });
+</script></code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-item reverse">
+                <div class="showcase-content">
+                    <h3>Technical SEO & Analytics Tracking</h3>
+                    <p>I regularly use Google Lighthouse to audit pages and ensure Core Web Vitals are green. Beyond
+                        on-page SEO (Yoast/Rank Math), I am highly comfortable configuring the DataLayer to capture
+                        granular user interactions.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-num text-green">100</span>
+                            <span class="stat-label">Performance</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num text-green">100</span>
+                            <span class="stat-label">Best Practices</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num text-green">100</span>
+                            <span class="stat-label">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-code">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <div class="window-title">optimization.js</div>
+                        </div>
+                        <pre><code class="language-javascript">/**
+ * Deferring heavy API loads to prevent TBT (Total Blocking Time)
+ * Ensuring Tag Manager events wait for idle state
+ */
+export const optimizeLoadQueue = () => {
+  // Use RequestIdleCallback for non-critical analytics
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(() => {
+      injectGTM();
+      preloadHeavyAssets();
+    });
+  } else {
+    setTimeout(() => { injectGTM(); }, 2000);
+  }
+};
+
+// Properly sizing DOM elements to get paint times down
+const injectGTM = () => {
+  const dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'core_metrics_ready',
+    'status': 'optimized'
+  });
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Designed and architected by R. for Sagan Application.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-liquid.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
