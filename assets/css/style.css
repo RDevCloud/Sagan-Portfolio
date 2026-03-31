@@ -421,7 +421,7 @@ a {
         font-size: 1.5rem;
     }
 
-    /* Evitar que el código rompa la pantalla horizontalmente */
+    /* responsive  */
     .code-window {
         width: 100%;
         max-width: 100%;
@@ -439,7 +439,7 @@ a {
         white-space: pre;
     }
 
-    /* Ajuste de estadísticas */
+    /* ajust  stats */
     .stats-grid {
         flex-direction: column;
         gap: 1rem;
@@ -459,7 +459,7 @@ a {
 
     .blob-2 {
         display: none;
-        /* Ocultar el segundo blob en móviles para mejorar rendimiento y evitar overflow */
+        /* hide 2nd blob in PH  */
     }
 
     .showcase-item {
