@@ -38,7 +38,7 @@ This repository serves as a live demonstration of my coding style.
 *   `assets/` - Contains clean vanilla CSS and modular JavaScript demonstrating DOM manipulation and clean architectural patterns.
 *   **Code Windows (Live Preview):** The live site contains interactive "code snippets" showcasing Liquid conditional rendering, JSON schemas, and JS load optimization techniques.
 
-**[View the Live Technical Showcase Here](https://your-github-username.github.io/Sagan-Portfolio/)** *(Remember to enable GitHub Pages to see the magic!)*
+**[View the Live Technical Showcase Here](https://RDevCloud.github.io/Sagan-Portfolio/)** *(Remember to enable GitHub Pages to see the magic!)*
 
 ---
 *Thank you for taking the time to review my approach to web development. I look forward to the opportunity to discuss how I can help engineer smart, high-converting platforms for Sagan.*
